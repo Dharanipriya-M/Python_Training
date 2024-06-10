@@ -1,0 +1,17 @@
+num=[]
+sum=int(input("Size:"))
+print(sum)
+temp=0
+for i in range(0,sum):
+    j=int(input())
+    num.append(j)
+print(num)
+for k in range(0,range(sum)):
+    for m in range(k+1,sum):
+        if(num[k]>num[m]):
+            temp=num[m]
+            num[m]=num[k]
+            num[k]=temp
+print("Smallest number:",num[0])
+print("Largest number:",num[n-1])
+
