@@ -1,0 +1,12 @@
+num = input("Enter a string: ")
+sum = input("Enter the character to replace: ")
+replace = input("Enter the replacement character: ")
+modified = ""
+flag = False
+for char in num:
+    if char == sum and not flag:
+        modified += replace
+        flag = True
+    else:
+        modified += char
+print("Modified string:", modified)
